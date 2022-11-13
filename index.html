@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist portfolio</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style2.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <p>Tatoo</p>
+            <p>Artist.</p>
+        </div>
+        <div class="list-container">
+            <!-- <ul class="ul1">
+                <li><a class="a-link a1" href="#"></a></li>
+                <li class="hidden-li"><a class="a-link a2" href="#"></a></li>
+            </ul> -->
+            <ul class="ul1">
+                <li><a class="a-link a1" href="#home">Home</a></li>
+                <li class="hidden-li"><a class="a-link a2" href="#home">Home</a></li>
+            </ul>
+            <ul class="ul2">
+                <li><a class="a-link a1" href="#about">About</a></li>
+                <li class="hidden-li"><a class="a-link a2" href="#about">About</a></li>
+            </ul>
+            <ul class="ul3">
+                <li><a class="a-link a1" href="#styles">Styles</a></li>
+                <li class="hidden-li"><a class="a-link a2" href="#styles">Styles</a></li>
+            </ul>
+            <ul class="ul4">
+                <li><a class="a-link a1" href="#contact">Contact</a></li>
+                <li class="hidden-li"><a class="a-link a2" href="#contact">Contact</a></li>
+
+            </ul>
+
+
+        </div>
+    </nav>
+    <header id="home">
+        <div class="head-container">
+            <div class="head-txt">
+                <h1 class="head-heading common-heading">Hello I'm John Doe</h1>
+                <p>Almost before we knew it, nostrum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+                    iusto
+                    nostrum dolorem, adipisicing elit. Nesciunt iusto
+                    nostrum dolorem, lorem labore nostrum reprehenderit rem
+                    .</p>
+                <p>Lorem ipsum dolor nostrum nostrum nostrum sit amet consectetur adipisicing elit. Cum quibusdam
+                    accusamus est laborum iusto
+                    atibus tempore ele voluptates error temporibus itaque.
+                </p>
+                <a class="head-btn" href="#">HIRE US</a>
+            </div>
+            <!-- <div class="head-img">
+                <img src="./img/header-img.jpg" alt="">
+            </div> -->
+        </div>
+    </header>
+
+    <div id="about">
+        <div class="about-container">
+            <div class="about-img">
+                <img src="./img/about-img.jpg" alt="">
+            </div>
+            <div class="about-text">
+                <h1 class="common-heading">KNOW ABOUT US AND OUR SPECIALIZATION</h1>
+                <p>Almost before we knew it,Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt iusto
+                    dlorem.
+                </p>
+                <p>
+                    cupiditate quidem cumque dolor corrupti sint quia maxime labore nostrum reprehenderit rem
+                    optio! Doloremque commodi ut rem fugit sunt.</p>
+                <div class="btn-container">
+                    <a class="about-btn secondary-btn" href="#">explore more</a>
+                </div>
+
+            </div>
+            <div class="about-gradient"></div>
+        </div>
+
+    </div>
+
+    <div id="styles">
+            <div class="scroll-container">
+                <div class="scroll-arrow left-arrow">
+                    <img src="./img/left-arrow-white.png" alt="">
+                </div>
+                <div class="styles-card-container">
+                    <div class="style-card">
+                        <div class="style-img">
+                            <img src="./img/japenese.jpg" alt="card1">
+                        </div>
+                        <div class="style-text">
+                            <h1>Japenese</h1>
+                        </div>
+                    </div>
+                    <div class="style-card">
+                        <div class="style-img">
+                            <img src="./img/illustrative.jpg" alt="card1">
+
+                        </div>
+                        <div class="style-text">
+                            <h1>Illustrative</h1>
+                        </div>
+                    </div>
+                    <div class="style-card">
+                        <div class="style-img">
+                            <img src="./img/traditional.webp" alt="card1">
+                        </div>
+                        <div class="style-text">
+                            <h1>Traditional</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-arrow right-arrow">
+                    <img src="./img/left-arrow-white.png" alt="">
+                </div>
+            </div>
+            <img class="view-more" src="./img/view-more1.png" alt="">
+    </div>
+
+    <div id="contact">
+        <div class="contact-div">
+            <form class="contact-form">
+                <h1 class=" common-heading">Contact Us</h1>
+
+                <div class="input-field">
+                    <label for="name">Username*</label>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="input-field">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" autocomplete="off">
+                </div>
+                
+
+                <div class="input-field">  
+                    <label for="Message">Message*</label>
+                    <!-- <input type="text" id="Message"> -->
+                    <textarea id="Message" name="" id="" cols="30" rows="6"></textarea>
+                </div>
+
+                <div class="input-field">
+                    <input class="secondary-btn" id="submit" onclick="func1(event)" type="submit" value="Submit">
+                </div>
+            </form>
+            <div class="social-icons">
+                <img src="png/fb-icon.png" alt="">
+                <img src="png/insta-icon.png" alt="">
+                <img src="png/twt-icon.png" alt="">
+            </div>
+        </div>
+        <div class="contact-image">
+            <img src="img/contact-img.jpg" alt="contact image">
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+
+    <script>
+        let aLink = document.querySelectorAll('.a-link')
+        let iLink = document.querySelectorAll('.i-link')
+
+        let ul1 = document.querySelector('.ul1')
+        let ul2 = document.querySelector('.ul2')
+        let a1 = document.querySelector('.a1')
+
+        function func1(e) {
+            e.preventDefault();
+            console.log('click');
+        }
+
+        // Array.from(aLink).forEach((e)=>{
+        //     e.addEventListener('mouseover', ()=>{
+        //         let aLink = document.querySelectorAll('.a-link')
+        //         let a1 = document.querySelector('.a1')
+        //         a1.style.transfrom = `rotateX(-90deg)`
+        //     })
+        // })
+
+        // Array.from(aLink).forEach((e)=>{
+        //     e.addEventListener('mouseover', ()=>{
+        //         let ul2 = document.querySelector('.ul2')
+        //         let iLink = document.querySelectorAll('.i-link')
+        //         let  aInner = e.innerHTML
+
+        //         Array.from(iLink).forEach((e)=>{
+        //             if (aInner = e.innerHTML) {
+        //                 e.style.color = 'red';
+        //             }
+        //         })
+        //         // ul1.lastElementChild.firstElementChild.style.color = 'red';
+        //     //    if(e.className = 'a-list'){
+        //     //     console.log('f');
+        //     //    }
+        //         console.log(aInner);
+        //     })
+        // })
+
+        // Array.from(aLink).forEach((e)=>{
+        //     e.style.setProperty('--x', e.clientX + 'px')
+        //     e.style.setProperty('--y', e.clientY + 'px')
+        //     e.style.setProperty('--text', e.innerText)
+        //     // console.log();
+        //     console.log(e.innerText);
+
+        // })
+        // Array.from(ul1).forEach((e)=>{
+        //     e.style.setProperty('--x1', e.clientX + 'px')
+        //     e.style.setProperty('--y1', e.clientY + 'px')
+        //     e.style.setProperty('--text', e.innerText)
+        //     // console.log();
+        //     // console.log(e.innerText);
+
+        // })
+
+    </script>
+</body>
+
+</html>
